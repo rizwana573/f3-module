@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Application</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+   
+
+</head>
+<body class="locationPage">
+    <header>
+        <div id="ipDeets">IP Address : <span id="showIp"></span></div>
+        <div id="locationDeets">
+         <span id="lat">Lat:</span>
+         <span id="city">City:</span>
+         <span id="organisation">Organisation:</span>
+         <span id="longt">Long:</span>
+         <span id="region">Region:</span>
+         <span id="hostname">Hostname:</span>
+        </div>
+    </header>
+    <main id="outerWrapper">
+        <section id="myLocationDetails">
+        <h1><center>Your Current Location</center></h1>
+        <div id="myMap">
+
+        </div>
+        </section>
+        <section id="moreInfo">
+            <h1><center>More Information About You</center></h1>
+            <article>
+                <div id="timeZone">Time Zone:</div>
+                <div id="dateAndTime">Date And Time:</div>
+                <div id="pincode">Pincode:</div>
+                <!-- <div>Time Zone:</div> -->
+            </article>
+        </section>
+        <section id="posNearYou">
+            <h1><center>Post Offices Near You</center></h1>
+            <input type="search" placeholder="Search By Name">
+            <ul id="posNearMe"></ul>
+        </section>
+    </main>
+
+    <!-- <script src="./script.js"></script> -->
+    <!-- <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_M6wrWFYvabjYedLoxqvnk4xxZBra_hg&callback=Function.prototype&libraries=maps,marker&v=beta"></script>
+
+    <script async src="./map.js"></script>
+
+</body>
+</html>

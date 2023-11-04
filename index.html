@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Application</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="homePage">
+    <main id="outerWrapper">
+        <section id="leftWrapper">
+            <h1 class="appTitle">
+                Post Office Application.
+            </h1>
+          <p class="appDesc">
+            This Application Allows you to extract information about the nearest Post Offices, based on your location.
+          </p>
+          <img src="./images/heroImage.png" alt="heroImage">
+        </section>
+        <section id="rightWrapper">
+            <article>
+                <div id="myIp">Your Current IP Address is <span id="ipAddress"></span></div>
+                <button id="getStarted">Get Started</button>
+            </article>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_M6wrWFYvabjYedLoxqvnk4xxZBra_hg&callback=Function.prototype&libraries=maps,marker&v=beta"></script>
+
+    <script async src="./map.js"></script> -->
+
+</body>
+</html>

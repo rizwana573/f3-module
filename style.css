@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+body {
+  background: #000;
+  font-family: "Inter";
+  color: #b8bccc;
+}
+.appTitle {
+  color: #575a85;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.appDesc {
+  color: #b8bccc;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px auto 45px;
+}
+#myIp {
+  color: #b8bccc;
+  font-family: "Inter";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* padding: 51vw 0 0 0; */
+}
+#ipAddress {
+  color: #fff;
+}
+#getStarted {
+  width: 250px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #b8bccc;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  background: transparent;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.homePage #outerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-wrap: nowrap;
+}
+#rightWrapper {
+  background: #575a85;
+  min-height: 100vh;
+  flex: 1;
+  padding: 3vw;
+  object-fit: fill;
+  position: relative;
+}
+center {
+  padding: 20px;
+}
+section#leftWrapper {
+  flex: 1;
+  padding: 3vw;
+}
+#rightWrapper article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+button#getStarted:hover {
+  opacity: 0.6;
+}
+
+/* internal pages css */
+.locationPage div#myMap {
+  width: 50vw;
+  height: 50vw;
+  margin: 0 auto;
+}
+
+.locationPage main#outerWrapper {
+  background: #575a85;
+  text-align: center;
+  margin: 0 auto 50px;
+  /* padding: 30px 40px; */
+}
+
+.locationPage header {
+  padding: 50px 40px;
+}
+
+.locationPage div#ipDeets,
+.locationPage #locationDeets {
+  color: rgba(184, 188, 204, 0.5);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.locationPage span#showIp {
+  color: #fff;
+}
+
+.locationPage div#locationDeets {
+  display: grid;
+  gap: 7px;
+  margin: 20px auto;
+  grid-template-columns: auto auto auto;
+}
+.locationPage div#locationDeets span span,
+.locationPage #moreInfo article span{
+  color: #fff;
+}
+.locationPage section#moreInfo {
+  background: #000;
+  padding: 50px 0;
+}
+
+.locationPage section#moreInfo article {
+  color: rgba(184, 188, 204, 0.5);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 90vw;
+  margin: 0 auto;
+  text-align: left;
+}
+.locationPage ul#posNearMe {
+  background: #000;
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.locationPage #posNearMe li {
+  background: #575a85;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+}
+
+.locationPage input[type="search"] {
+  margin: 0 auto 30px;
+}
+
+.locationPage section#posNearYou {
+  background: #000;
+  padding: 0 50px;
+}
+.locationPage #posNearMe li div{
+  margin: 5px auto;
+}
+.locationPage #posNearMe li div span{
+  color: #fff;
+}
