@@ -6,9 +6,12 @@ function getIP(json) {
 function formSubmit() {
   let getStarted = document.getElementById("getStarted");
   getStarted.addEventListener("click", function () {
-    //if (location.hostname === "localhost" || location.hostname === "127.0.0.1" ) {
+    if (location.hostname === "localhost" || location.hostname === "127.0.0.1" ) {
       window.location.pathname = "/myLocation.html";
-   // }
+    }
+    else{
+      window.location.pathname = "/f3-module/myLocation.html"; 
+    }
   });
 }
 window.addEventListener("DOMContentLoaded", (event) => {
