@@ -1,28 +1,24 @@
 function getIP(json) {
-   document.getElementById("ipAddress").innerText = json.ip;
-   localStorage.setItem("ipAddress", json.ip);
+  document.getElementById("ipAddress").innerText = json.ip;
+  localStorage.setItem("ipAddress", json.ip);
 }
 
 function formSubmit() {
-   let getStarted = document.getElementById("getStarted");
-   getStarted.addEventListener("click", function () {
-     //if (location.pathname === "/"){
-      // localStorage.setItem("searchQuery", searchQuery);
-       if(location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-       window.location.pathname = "/myLocation.html";
-    // } 
-   }
-   });
- }
- window.addEventListener("DOMContentLoaded", (event) => {
-   formSubmit();
- });
+  let getStarted = document.getElementById("getStarted");
+  getStarted.addEventListener("click", function () {
+    //if (location.hostname === "localhost" || location.hostname === "127.0.0.1" ) {
+      window.location.pathname = "/myLocation.html";
+   // }
+  });
+}
+window.addEventListener("DOMContentLoaded", (event) => {
+  formSubmit();
+});
 
 // getIP();
 // let IP = localStorage.getItem("ipAddress");
 // let position=[];
 // //console.log(IP);
-
 
 // async function getData() {
 //     console.log(IP);
